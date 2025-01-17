@@ -1,0 +1,18 @@
+body {
+	margin: 0;
+}
+
+#myButton
+{
+
+}
+
+.container {
+	max-width: 720px;
+	margin: 0 auto;
+};
+
+.flex {
+display: flex;
+justify-content: start;
+}
