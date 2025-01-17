@@ -3,7 +3,20 @@
 // console.log(generuotiAtsitiktinius(4, 100, 105)); 
 // atsakymas konsolėje: [101, 101, 100, 105]
 
-function generuotiAtsitiktinius()
+// function rand(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// const atsitiktiniai = [];
+
+// index = 0;
+// while (index < 4) {
+//     const atsitiktinisSk = rand(100, 105);
+//     atsitiktiniai.push(atsitiktinisSk);
+//     index++;
+// }
+// console.log(atsitiktiniai);
+
 
 // 2. Sukurkite funkciją, kuri console.log’e parašo tik skaičius iš masyvo M, mažesnius nei N.
 // pvz: 
