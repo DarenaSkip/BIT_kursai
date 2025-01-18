@@ -33,7 +33,22 @@
 
 // 3. Sukurkite funkciją, countAllThrees(array), kuri suskaičiuotų, kiek kartų pateiktame skaičių masyve yra pasikartojantis skaičius 3;
 
-// function
+// const skaiciuMasyvas = [36, 1233345, -4321, 3.77303, -5.3893];
+
+// function countAllThrees(skaiciuMasyvas) {
+//   let count = 0;
+//   for (let i = 0; i < skaiciuMasyvas.length; i++) {
+//     let eilute = Math.abs(skaiciuMasyvas[i]).toString();
+//     for (let j = 0; j < eilute.length; j++) {
+//       if (eilute[j] === '3') {
+//         count++;
+//       }
+//     }
+//   }
+//   return count;
+// }
+// // console.log(countAllThrees(skaiciuMasyvas));
+// console.log(`Skaitmens 3 kiekis masyve: ${countAllThrees(skaiciuMasyvas)}`);
 
 // 4. Sukurkite funkcijas countAllEven(array) ir countAllOdd(array). Pirmoji funkcija suskaičiuoja, kiek yra lyginių skaičių pateiktame masyve. Kita suskaičiuoja kiek yra nelyginių skaičių;
 
