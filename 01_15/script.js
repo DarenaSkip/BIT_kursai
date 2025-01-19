@@ -48,7 +48,7 @@
 //   return count;
 // }
 // // console.log(countAllThrees(skaiciuMasyvas));
-// console.log(`Skaitmens 3 kiekis masyve: ${countAllThrees(skaiciuMasyvas)}`);
+// console.log(`Skaitmens 3 kiekis masyve: ${countAllThrees(skaiciuMasyvas)}`); //Nedariau universalumo, tik kaip uzduoty, trejetus tik isrinkt, suskaiciuot...Ir taip kiek laiko surijo ir tiek isstenet...Realiuoju laiku taip greit, be pradzios ir neprikoduociau, bent kol kas, vis is kitur reikia ziuret, panasuma pritaikyt...
 
 // 4. Sukurkite funkcijas countAllEven(array) ir countAllOdd(array). Pirmoji funkcija suskaičiuoja, kiek yra lyginių skaičių pateiktame masyve. Kita suskaičiuoja kiek yra nelyginių skaičių;
 
