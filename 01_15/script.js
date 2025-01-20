@@ -22,7 +22,7 @@ function rand(min, max) {
 // }
 // console.log(atsitiktiniai);
 
-// //1.2. Paskaitos variantas
+// 1.2. Paskaitos variantas
 
 function atsitSkMasyvas(n, m, o) {
   // 1. deklaruojame nauja masyva
@@ -41,20 +41,20 @@ console.log(atsitSkMasyvas(10, 0, 5));
 const atsitiktiniai1 = atsitSkMasyvas(1000, 1, 100);
 console.log(atsitiktiniai1);
 
-// //2. Sukurkite funkciją, kuri console.log’e parašo tik skaičius iš masyvo M, mažesnius nei N.
+// 2. Sukurkite funkciją, kuri console.log’e parašo tik skaičius iš masyvo M, mažesnius nei N.
 // pvz:
 // tikMazesni([4,5,6,7,2,4], 5);
 // atsakymas konsolėje: 4, 2, 4
 
-// function tikMazesni(M, N) {
-//   for (let i = 0; i < M.length; i++) {
-//     if (M[i] < N) {
-//       console.log(M[i]);
-//     }
-//   }
-// }
-// //tikMazesni([4, 5, 6, 7, 2, 4], 6);
-// tikMazesni(atsitiktiniai1, 5);
+function tikMazesni(M, N) {
+  for (let i = 0; i < M.length; i++) {
+    if (M[i] < N) {
+      console.log(M[i]);
+    }
+  }
+}
+//tikMazesni([4, 5, 6, 7, 2, 4], 6);
+tikMazesni(atsitiktiniai1, 5);
 
 // 3. Sukurkite funkciją, countAllThrees(array), kuri suskaičiuotų, kiek kartų pateiktame skaičių masyve yra pasikartojantis skaičius 3;
 
@@ -75,21 +75,20 @@ console.log(atsitiktiniai1);
 // }
 // // console.log(countAllThrees(skaiciuMasyvas));
 // console.log(`Skaitmens 3 kiekis masyve: ${countAllThrees(skaiciuMasyvas)}`);
-// //Nedariau universalumo, tik kaip uzduoty, trejetus tik isrinkt, suskaiciuot...Ir taip kiek laiko surijo ir tiek isstenet...Realiuoju laiku taip greit, be pradzios ir neprikoduociau, bent kol kas, vis is kitur reikia ziuret, panasuma pritaikyt...
 
-// //3.2. paskaitos variantas
+// 3.2. paskaitos variantas
 
-// function countAllThrees(array){
-//     let pasikartSk = 0;
-//     for(let i = 0; i < array.length; i++){
-//         if(array[i] == 3){
-//         // if(array[i] == 3 || array[i] == 6)
-//             pasikartSk++;
-//         }
-//     }
-//     return pasikartSk;
-// }
-// console.log(countAllThrees(atsitiktiniai1));
+function countAllThrees(array){
+    let pasikartSk = 0;
+    for(let i = 0; i < array.length; i++){
+        if(array[i] == 3){
+        // if(array[i] == 3 || array[i] == 6)
+            pasikartSk++;
+        }
+    }
+    return pasikartSk;
+}
+console.log(countAllThrees(atsitiktiniai1));
 
 // 4. Sukurkite funkcijas countAllEven(array) ir countAllOdd(array). Pirmoji funkcija suskaičiuoja, kiek yra lyginių skaičių pateiktame masyve. Kita suskaičiuoja kiek yra nelyginių skaičių;
 
@@ -112,131 +111,132 @@ console.log(atsitiktiniai1);
 //     }
 //     }
 // // return kiekLyginiu;
-
 // const skaiciuMasyvas = [1,2,11,0,-1,-4,12,11,666,999,33]
 
-// //4.2. paskaitos variantas
+// 4.2. paskaitos variantas
 
-// function countAllEven(array){
-//     let kiekPasikart = 0;
-//     for(let i = 0; i < array.length; i++){
-//         if(array[i] % 2 == 0){
-//             kiekPasikart++;
-//         }
-//     }
-//     return kiekPasikart;
-// }
+function countAllEven(array){
+    let kiekPasikart = 0;
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % 2 == 0){
+            kiekPasikart++;
+        }
+    }
+    return kiekPasikart;
+}
 
-// function countAllOdd(array){
-//     let kiekPasikart = 0;
-//     for(let i = 0; i < array.length; i++){
-//         if(array[i] % 2 != 0){
-//             kiekPasikart++;
-//         }
-//     }
-//     return kiekPasikart;
-// }
-// // console.log(countAllEven([2,3,4,5,6,7,8]))
-// console.log(countAllEven(atsitiktiniai1));
-// console.log(countAllOdd(atsitiktiniai1));
+function countAllOdd(array){
+    let kiekPasikart = 0;
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % 2 != 0){
+            kiekPasikart++;
+        }
+    }
+    return kiekPasikart;
+}
+// console.log(countAllEven([2,3,4,5,6,7,8]))
+console.log(countAllEven(atsitiktiniai1));
+console.log(countAllOdd(atsitiktiniai1));
 
 // 5. Sukurkite funkciją countAllEvenUnderSix(array), kuri suskaičiuoja, kiek yra lyginių skaičių, kurių reikšmė yra  6 arba mažesnė  pateiktame masyve.
 
-// function countAllEvenUnderSix(array) {
-//   let count = 0;
-//   for (let i = 0; i < array.length; i++) {
-//     if (array[i] % 2 == 0 && array[i] <= 6) {
-//       count++;
-//     }
-//   }
-//   return count;
-// }
-// console.log(`Viso 3-jetu atsitiktiniu skaiciu masyve: `, countAllEvenUnderSix(atsitiktiniai1)); //30
+function countAllEvenUnderSix(array) {
+  let count = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 == 0 && array[i] <= 6) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log( countAllEvenUnderSix(atsitiktiniai1)); //30
 
 // 6. Sukurkite funkciją throwCoin(), kuri imituoja monetos metimą. funkcijos gražinama reikšmė: “H” - Herbas arba “S” - Skaičius;
 
-// //6.1. Iprastas variantas
+// // 6.1. Iprastas variantas
 
 // function throwCoin() {
-// //   // 50% - H
-// //   // 50% - S
-// //   let atsitiktinis = rand(0, 1);
-// //   if (atsitiktinis == 1) {
-// //     return "H";
-// //   } else {
-// //     return "S";
-// //   }
-// // }
-// // console.log(throwCoin());
-
-// // // 6.2. - trumpesnis variantas (liuks!):
-
-//   if (rand(0, 1) == 1) return "H";
-//   return "S";
-
+//   // 50% - H
+//   // 50% - S
+//   let atsitiktinis = rand(0, 1);
+//   if (atsitiktinis == 1) {
+//     return "H";
+//   } else {
+//     return "S";
+//   }
 // }
 // console.log(throwCoin());
+
+// 6.2. - trumpesnis variantas (liuks!):
+
+function throwCoin() {
+
+  if (rand(0, 1) == 1) return "H";
+  return "S";
+
+}
+console.log(throwCoin());
 
 // 7. Sukurkite funkciją, kuri imituoja monetos metimą 20 kartų, suskaičiuokite kiek kartų iškrito skaičius, kiek kartų iškrito herbas. Paskaičiuokite procentaliai, kokiu dažnumu krito skaičius, kokiu dažnumu krito skaičius;
 // (pasiūlymas patobulinimui mini-game - > pridėti puslapyje mygtuką, leisiantį pasirinkti kokios pusės monetos tikitės, ir pridėti mesti monetą mygtukus, tada atitinkamai atvaizduoti, buvo laimėta - ar pralaimėta)
 
 // // Sprendimas
 
-// function throwCoinTimes(n){
-//     let kartuIskrSk = 0;
-//     let kartuIskrHr = 0;
+function throwCoinTimes(n){
+    let kartuIskrSk = 0;
+    let kartuIskrHr = 0;
 
-//     for(let i = 0; i < n; i++){
-//         //vyksta metimas
-//         let iskritusiReiksme = throwCoin();
-//         //metimo vartinimas
-//         if(iskritusiReiksme == "H") kartuIskrHr++;
-//             else kartuIskrSk++;
+    for(let i = 0; i < n; i++){
+        //vyksta metimas
+        let iskritusiReiksme = throwCoin();
+        //metimo vertinimas
+        if(iskritusiReiksme == "H") kartuIskrHr++;
+            else kartuIskrSk++;
 
-//     }
+    }
 
-//     let procentaliaiIskrSk = (kartuIskrSk / n) * 100;
-//     let procentaliaiIskrHr = (kartuIskrHr / n) * 100;
+    let procentaliaiIskrSk = (kartuIskrSk / n) * 100;
+    let procentaliaiIskrHr = (kartuIskrHr / n) * 100;
 
-//     console.log(`Skaicius iskrito ${kartuIskrSk} kartu`);
-//     console.log(`Skaicius iskrito ${kartuIskrHr} kartu`);
-//     console.log(`Skaicius procentaliai krito ${procentaliaiIskrSk}% atveju, herbas krito ${procentaliaiIskrHr}% atveju`);
-// }
-// throwCoinTimes(26);
+    console.log(`Skaicius iskrito ${kartuIskrSk} kartu`);
+    console.log(`Skaicius iskrito ${kartuIskrHr} kartu`);
+    console.log(`Skaicius procentaliai krito ${procentaliaiIskrSk}% atveju, herbas krito ${procentaliaiIskrHr}% atveju`);
+}
+throwCoinTimes(26);
 
 // 8. Sukurkite funkciją sumAll(masyvas), kuri susumuoja visus masyvo elementus, bei gražina šią sumą kaip rezultatą;
 
 // // Sprendimas
 
-// function sumAll(masyvas){
-//     let suma = 0;
-//     for(let i = 0; i < masyvas.length; i++) suma += masyvas[i];
-//     return suma;
-// }
-// console.log(sumAll(atsitiktiniai1));
+function sumAll(masyvas){
+    let suma = 0;
+    for(let i = 0; i < masyvas.length; i++) suma += masyvas[i];
+    return suma;
+}
+console.log(sumAll(atsitiktiniai1));
 
 // 9. Sukurkite funkciją average(arr), kuri atranda visų masyve pateiktų skaičių vidurkį; PVZ: average([1,2,3,4,5])//3
 
 // // Sprendimas
 
-// function average(arr){
-//     let suma = sumAll(arr);
-//     return suma / arr.length;
-// }
-// console.log(average(atsitiktiniai1));
+function average(arr){
+    let suma = sumAll(arr);
+    return suma / arr.length;
+}
+console.log(average(atsitiktiniai1));
 
 // 10. Sukurkite funkciją findAllUniqueNumbers(masyvas), kuri atranda masyve esančius unikalius skaičius. gražina juos masyvo pavidalu: pvz: findAllUniqueNumbers([1,1,2,8,8,1, 4, 6]) // [1,2,8,4,6];
 
 // // Sprendimas
 
-// function findAllUniqueNumbers(masyvas){
-//     const unikalusSkaiciai = [];
+function findAllUniqueNumbers(masyvas){
+    const unikalusSkaiciai = [];
 
-//     for(let i = 0; i < masyvas.length; i++){
-//         if(!unikalusSkaiciai.includes(masyvas[i])){
-//             unikalusSkaiciai.push(masyvas[i]);
-//         }
-//     }
-//     return unikalusSkaiciai;
-// }
-// console.log(findAllUniqueNumbers([1,3,2,2,1,5,5,5,5,7,8,7]));
+    for(let i = 0; i < masyvas.length; i++){
+        if(!unikalusSkaiciai.includes(masyvas[i])){
+            unikalusSkaiciai.push(masyvas[i]);
+        }
+    }
+    return unikalusSkaiciai;
+}
+console.log(findAllUniqueNumbers([1,3,2,2,1,5,5,5,5,7,8,7]));
