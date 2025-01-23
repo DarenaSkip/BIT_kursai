@@ -1,0 +1,9 @@
+ol {
+  /* list-style-type: bullet; */
+  padding-left: 20px;
+}
+
+.price {
+  color: green;
+  font-weight: bold;
+}

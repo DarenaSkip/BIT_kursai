@@ -7,7 +7,18 @@
     <title>Pirkiniai</title>
 </head>
 <body>
-    
+    <div>
+        <h1>Pirkiniu sarasas</h1>
+    </div>
+    <div id="shopping-list"></div>
+    <div>
+        <ul id="shopping-list"></ul>
+        <input type="text" id="item-name" placeholder="Produkto pavadinimas">
+        <input type="number" id="item-price" placeholder="Kaina">
+        <button onclick="addItem(document.getElementById('item-name').value, parseFloat(document.getElementById('item-price').value))">
+          Pridėti
+        </button>
+      </div>
 
     <script src="./script.js"></script>
 </body>
